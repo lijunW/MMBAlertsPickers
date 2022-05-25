@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MMBAlertsPickers'
-  s.version      = '1.1.92'
+  s.version      = '1.1.94'
   s.summary      = 'Advanced usage of UIAlertController with TextField, DatePicker, PickerView, TableView and CollectionView adapted for using in DialogSDK'
   s.homepage     = 'https://github.com/MahmoudMMB/MMBAlertsPickers'
   s.license      = 'MIT'
@@ -18,7 +18,10 @@ Pod::Spec.new do |s|
   s.swift_version = '5'
   s.source       = { :git => 'https://github.com/MahmoudMMB/MMBAlertsPickers.git', :tag => s.version }
   s.source_files = 'Sources/**/*.{swift,h,m,xib,storyboard,lproj,bundle}'
-  s.resources = ['Sources/Pickers/Locale/*.{swift,h,m,xib,bundle}', 'Sources/Views/*.{lproj,storyboard}/*.{xib,strings}']
+  s.resources = [
+    'Sources/MMBAlertsPickers/Locale/*.{swift,h,m,xib,bundle}',
+    'Sources/MMBAlertsPickers/Views/*.{lproj,storyboard}/*.{xib,strings}'
+  ]
   s.exclude_files = "MMBAlertsPickers/*.plist"
 
 end
