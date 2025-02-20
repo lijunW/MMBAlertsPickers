@@ -177,6 +177,7 @@ final public class ContactsPickerViewController: UIViewController {
                 self.alertController?.dismiss(animated: true)
             }
             alert.show()
+        default: break
         }
     }
     
